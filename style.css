@@ -1,3 +1,37 @@
-body{
-    background-color: azure;
-}
+
+
+form button{
+    background-color: yellow;
+   }
+   .btn1{
+    background-color: green;
+    width: 100px;
+    height: 35px;
+   }
+
+   .btn2{
+    background-color: rgb(41, 140, 221);
+    width: 100px;
+    height: 35px;
+   }
+
+   p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:grey;
+    letter-spacing: 10px;
+    opacity: 0.7;
+    
+   }
+
+   .div1{
+    border-width:2px ;
+    width: 50%;
+    margin-left: 20%;
+   border-style: solid;
+    border-color: turquoise;
+    border-radius: 15px;
+    padding-left: 10px;
+    box-shadow: 3px 3px black;
+   }

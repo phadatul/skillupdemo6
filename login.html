@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        <script>
+           x=10
+           y="10"
+          if(x===y){ // operator compares value and type as well
+            console.log("x and y are equal")
+          }else{
+            console.log("Not equal")
+          }
+          var i=1;
+          while(i<11){
+            document.writeln(i);
+            i++;
+          }
+
+          for(var i=1;i<11;i++){
+            document.writeln(i+"<br />")
+          }
+
+          function add(a,b){
+            return a+b
+          }
+
+         function hello(){
+           var x=document.getElementById('mytxt').value
+           document.getElementById('mypara').innerHTML=x;
+           document.getElementById('mypara').style.color=x
+         }
+
+         function validate(){
+            return false;
+         }
+        </script>
+</head>
+<body>
+    <input type="text" id="mytxt" />
+    <button onclick="hello()">Okay</button>
+    <div class="container bg-dark">
+        <p id="mypara">This is my text</p>
+        <h2>My forms</h2>
+    <div class="row">
+        
+        <div class="col-3 alert-dark mt-5">
+            <form action="https://www.google.com" class="mt-5" onsubmit="return validate()">
+                <input type="text" class="form-control"/>
+                <input type="password" class="form-control" />
+                <input type="submit" class="btn btn-warning" />
+            </form>
+        </div>
+        <div class="col-3 alert-warning mt-5"></div>
+        <div class="col-3 alert-info mt-5">
+            <form class="mt-5">
+                <input type="text" class="form-control"/>
+                <input type="password" class="form-control" />
+                <input type="submit" class="btn btn-success" />
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
